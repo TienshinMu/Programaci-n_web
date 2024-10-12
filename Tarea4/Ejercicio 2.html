@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Mecánica de Carros</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333333;
+        }
+
+        /* Sección de héroe */
+        .hero {
+            position: relative;
+            height: 100vh;
+            background-image: url('https://images6.alphacoders.com/419/419958.jpg'); 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(248, 246, 247, 0.978); 
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: #f92b73; /* Amarillo */
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-top: 1rem;
+            color: #ff3974; 
+        }
+
+        
+        .features {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .features h2 {
+            margin-bottom: 1rem;
+            color: #ff86ab;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .feature {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: scale(1.05);
+            border: 2px solid #ff86ab; 
+        }
+
+        .feature img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 1rem;
+        }
+
+        .testimonials {
+            padding: 2rem;
+            background: #ff86ab; 
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .testimonials h2 {
+            margin-bottom: 1rem;
+            color: #fffdfe; 
+        }
+
+        .testimonial-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 300px;
+        }
+
+        .testimonial-slider {
+            display: flex;
+            transition: transform 0.5s ease;
+            height: 100%;
+        }
+
+        .testimonial {
+            min-width: 100%;
+            box-sizing: border-box;
+            padding: 1rem;
+            background: #f4f4f4; 
+            color: #1a1517;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial p {
+            margin: 0;
+        }
+
+        .testimonial-buttons {
+            position: absolute;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .testimonial-buttons button {
+            background: #fce566; 
+            color: black;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 0.5rem;
+            transition: background 0.3s ease;
+        }
+
+        .testimonial-buttons button:hover {
+            background: #f9d76f; 
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .features h2 {
+                font-size: 1.5rem;
+            }
+
+            .feature img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Postres sanrio</h1>
+            <p>Soluciones confiables para el mantenimiento y reparación de tu vehículo</p>
+        </div>
+    </header>
+
+    <section class="features">
+        <h2>Nuestros Servicios</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <img src="https://marketplace.canva.com/EAFE2RtUYow/1/0/1067w/canva-tarjeta-para-receta-receta-f%C3%A1cil%3A-pastel-de-chocolate-reposter%C3%ADa-geom%C3%A9trico-lila-x8m0KMyeeJ0.jpg" alt="Recetas"> 
+                <h3>Recetas</h3>
+                <p>Crea tus propias recetas personalizadas y guárdalas para futuras ocasiones.</p>
+            </div>
+            <div class="feature">
+                <img src="https://img.freepik.com/fotos-premium/pasteles-vitrina-cafeteria_198067-569952.jpg" alt="Compras"> 
+                <h3>Compras automáticas</h3>
+                <p>Genera automáticamente una lista de compras con los ingredientes necesarios para tu receta.</p>
+            </div>
+            <div class="feature">
+                <img src="https://tiendaneolo.com/tutoriales/wp-content/uploads/2023/12/Postres-para-hacer-y-vender-sin-horno-scaled.jpg"> 
+                <h3>Tutoriales</h3>
+                <p>Aprende a preparar tus postres favoritos con nuestros tutoriales en video paso a paso.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Opiniones!</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"¡Esta página web es mi nueva mejor amiga en la cocina! Encuentro recetas para cualquier ocasión y con ingredientes que siempre tengo a mano. ¡Mis invitados quedan encantados con mis nuevos postres!"</p>
+                    <p>- Ana López</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Logro encontrar las recetas que busco en segundos! Además, las instrucciones son claras y fáciles de seguir."</p>
+                    <p>- Juan Santos</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Me encanta formar parte de esta comunidad de amantes de los postres. Compartimos recetas, consejos y fotos de nuestras creaciones. ¡Es muy inspirador!"</p>
+                    <p>- Elizabeth waller</p>
+                </div>
+            </div>
+            <div class="testimonial-buttons">
+                <button id="prev">Anterior</button>
+                <button id="next">Siguiente</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const slider = document.querySelector('.testimonial-slider');
+        const prevButton = document.getElementById('prev');
+        const nextButton = document.getElementById('next');
+        let index = 0;
+
+        function showSlide(n) {
+            const totalSlides = document.querySelectorAll('.testimonial').length;
+            index = (n + totalSlides) % totalSlides;
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        prevButton.addEventListener('click', () => showSlide(index - 1));
+        nextButton.addEventListener('click', () => showSlide(index + 1));
+
+        // Auto-slide
+        setInterval(() => showSlide(index + 1), 5000); 
+    </script>
+</body>
+</html>

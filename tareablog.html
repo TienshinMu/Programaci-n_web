@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+    <head>
+        <title>Blog personal</title>
+    </head>
+    <body>
+        <h1>Mi Blog</h1>
+
+        <section>
+            <label for="browser">Elige tu navegador:</label>
+            <input list="Artículos" id="browser" name="browser">
+            <datalist id="Artículos">
+                <option value="Cosas que me gustan">
+                <option value="Cosas que no me gustan">
+                <option value="Cosas que me gustaría hacer">
+            </datalist>
+
+            <h2>Artículos Recientes</h2>
+            <article>
+                <h3>CG</h3>
+                <p>La <abbr title="CG">CG</abbr> se refiere a cosas que me gustan.</p>
+                <p>
+                    "Publicado el 
+                    <time datetime="2024-04-25">25 de abril de 2024"</time>
+                </p>
+                <img src="https://i.pinimg.com/564x/ef/7a/59/ef7a598a1ee5e55b3e7f9fdcc26dd4e9.jpg" alt="Dibujo" width="100" height="100">
+                <p>Entre mis actividades favoritas, se encuentran el dibujo, que me permite expresar mi creatividad de manera visual, tocar el piano, que me relaja y conecta con mis emociones, y la elaboración de postres, que me apasiona por la combinación de sabores y texturas.
+                </p>
+                <button onclick="Leído(0)">Leído</button>
+            </article>
+            <article>
+                <h3>CN</h3>
+                <p>La <abbr title="CN">CN</abbr> se refiere a cosas que no me gustan.</p>
+                <p>
+                    "Publicado el 
+                    <time datetime="2024-08-17">17 de agosto de 2024"</time>
+                </p>
+                <img src="https://i.pinimg.com/564x/f8/d9/ae/f8d9ae88be2d1107f42c41ea0e3da7d9.jpg" alt="Lavar platos" width="100" height="100">
+                <p>Lo que menos me gusta en el mundo es madrugar, me cuesta muchísimo ponerme de pie temprano. Además, odio tener que combinar ropa a la carrera y termino vistiéndome de cualquier manera. Por si fuera poco, lavar los platos es una tarea que evito a toda costa.
+                </p>
+                <button onclick="Leído(1)">Leído</button>
+            </article>
+            <aside>
+                <h3>CI</h3>
+                <p>La <abbr title="CI">CI</abbr> se refiere a cosas que me gustaría intentar.</p>
+                <p>
+                    "Publicado el 
+                    <time datetime="2024-09-02">2 de septiembre de 2024"</time>
+                </p>
+                <img src="https://i.pinimg.com/564x/47/5f/80/475f80ef22509f28ed0a5b0e6e55df93.jpg" alt="maybe" width="100" height="100">
+                <p>Aspiro a un crecimiento continuo, tanto personal como profesional. Me gustaría viajar a destinos exóticos, aprender nuevos idiomas para ampliar mis horizontes y descubrir la satisfacción de crear mis propias prendas a través del tejido.
+                </p>
+                <button onclick="Leído(2)">Leído</button>
+            </aside>
+        </section>
+        <section>
+            <h2>Citas</h2> 
+            <blockquote>
+                <p>
+                    "Todo lo que puedes imaginar es real."
+                </p>
+                <p>
+                    -Pablo Picasso.
+                </p>
+            </blockquote>
+            <blockquote>
+                <p>
+                    "Al aprender una nueva palabra, adquieres un nuevo mundo."
+                </p>
+                <p>
+                    -Confucio.
+                </p>
+            </blockquote>
+            <blockquote>
+                <p>
+                    "Si no estás haciendo algo que te asusta, entonces no estás progresando."
+                </p>
+                <p>
+                    -Miles Davis.
+                </p>
+            </blockquote>
+        </section>
+        <h2>Artículos relacionados</h2>
+        <nav>
+            <ul>
+             <li>
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwizleGW-P-HAxWMSTABHRiIElEQFnoECBgQAQ&url=https%3A%2F%2Fblogs.ucontinental.edu.pe%2Fcuatro-razones-por-las-que-aprender-un-idioma-nos-hace-mas-felices%2Ftemas%2Fidiomas%2F&usg=AOvVaw0wfDf_lExJ_nbl17Qfnrv2&opi=89978449">Cuatro razones por las que aprender un idioma nos hace más felices</a>
+             </li>
+             <li>
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjJi6rF-P-HAxXWTjABHSQEAGMQFnoECCAQAQ&url=https%3A%2F%2Felobservatoriosocial.fundacionlacaixa.org%2Fes%2F-%2Fsobre-la-musica-la-felicidad-y-la-salud-qua-sabemos-al-respecto-&usg=AOvVaw2Qze5Nby6XBBlScHi9r1h2&opi=89978449">Sobre la música, la felicidad y la salud: ¿qué sabemos al respecto?</a>
+             </li>
+             <li>
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiZ-pD6-P-HAxUYRjABHbsgDPAQFnoECBsQAQ&url=https%3A%2F%2Fdialnet.unirioja.es%2Fdescarga%2Farticulo%2F8482907.pdf&usg=AOvVaw1bawRNct9CDzmOwtxHhW-e&opi=89978449">Los efectos de tejer en grupo</a>
+             </li>  
+            </ul> 
+            <p><cite>Larousse editorial</cite>es un libro sobre postres bastante útil</p>   
+        </nav>
+        <section>
+            <h2>Gráfico de popularidad de los artículos</h2>
+            <svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+                <rect x="150" y="50" width="50" height="100" fill="lightyellow"></rect>
+                <text x="160" y="165">CG</text>
+                <rect x="50" y="30" width="50" height="120" fill="pink"></rect>
+                <text x="60" y="165">CI</text>
+                <rect x="250" y="70" width="50" height="80" fill="lightblue"></rect>
+                <text x="260" y="165">CN</text>
+              </svg>
+        </section>
+        <p>Barra de progreso</p>
+        <progress id="barraProgreso" value="3" max="3">100%</progress>
+    </body>
+</html> 

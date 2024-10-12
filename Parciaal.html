@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Learning Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<style>
+    .yes{
+        background-color: #4105E1;
+        color: aliceblue;
+    }
+
+    footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #4105E1;
+            color: white;
+        }
+
+        footer a {
+            text-align: center;
+            color:#f7f7f7;
+            text-decoration: none;
+        }
+
+    /* Sección de héroe */
+    .hero {
+            position: relative;
+            height: 100vh;
+            background-image: url('https://res.cloudinary.com/uvggt/image/upload/f_auto/v1677171305/2023/03%20Marzo/Inteligencia%20Artificial%20Chatbot/Chat-Inteligencia-Artificial-UVG.jpg'); 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background:rgba(171, 155, 240, 0.8); 
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: #f7f7f7; 
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-top: 1rem;
+            color: #f9f8f8; 
+        }
+
+        .o{
+            text-align: center;
+        }
+
+        .testimonials {
+            padding: 2rem;
+            background: #7859F5; 
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .testimonials h2 {
+            margin-bottom: 1rem;
+            color: #fffdfe; 
+        }
+</style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg yes">
+            <div class="container-fluid col-lg-9">
+                <img src="https://i.pinimg.com/736x/14/b6/74/14b674c4b10ea7741e46c385327273fb.jpg" alt="Logo" width="80" height="80" class="d-inline-block align-text-top">
+                <span style="font-size: 24px;">IA Learning Hub</span>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active yes" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link yes" href="#">Cursos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link yes" href="#">Recursos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link yes" href="#">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link yes" href="#">Sobre Nosotros</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="container-fluid col-lg-3">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+          </nav>
+    </header>
+
+    <main class="hero">
+        <div class="hero-content">
+            <h1>Domina la Inteligencia Artificial y las Ciencia de Datos</h1>
+            <button type="button" class="btn btn-primary">Registrarse</button>
+            <button type="button" class="btn btn-secondary">Más información</button>
+        </div>
+    </main>
+
+    <section class="Cursos container">
+        <h2 class="o">Cursos</h2>
+        <div class="row">
+            <div class="col-lg-3">
+        <div class="card ms-5" style="width: 18rem;">
+            <img src="https://teorema-rd.com/wp-content/uploads/2024/08/Machine-learning-1-768x522.jpg.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Fundamentos de Machine Learning</h5>
+              <p class="card-text">Aprenderás los conceptos básicos, los diferentes tipos de aprendizaje (supervisado, no supervisado y por refuerzo), y cómo aplicar algoritmos clave como regresión lineal, árboles de decisión y redes neuronales artificiales. </p>
+              <a href="#" class="btn btn-primary">Ver Curso</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card ms-5" style="width: 18rem;">
+            <img src="https://thevalley.es/wp-content/uploads/2024/04/ingenieria-de-datos-e-ia.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ingeniería de Datos</h5>
+              <p class="card-text">Domina las técnicas y herramientas esenciales para la ingeniería de datos. Aprenderás a recolectar, limpiar, transformar y almacenar grandes volúmenes de datos. Exploraremos bases de datos relacionales y no relacionales, herramientas de ETL (Extract, Transform, Load) como Apache Spark y cloud data warehouses.</p>
+              <a href="#" class="btn btn-primary">Ver Curso</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card ms-5" style="width: 18rem;">
+            <img src="https://www.academiauniversal.es/wp-content/uploads/2023/05/internet-of-things-etica-en-inteligencia-artificial-y-covid-19jpg.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ética en la Inteligencia Artificial</h5>
+              <p class="card-text">Este curso te proporcionará una visión general de los desafíos éticos asociados con el desarrollo y despliegue de sistemas de IA. Exploraremos temas como el sesgo algorítmico, la privacidad, la transparencia y la responsabilidad. Aprenderás a diseñar y desarrollar sistemas de IA que sean justos, equitativos y beneficiosos para la sociedad.</p>
+              <a href="#" class="btn btn-primary">Ver Curso</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card ms-5" style="width: 18rem;">
+            <img src="https://njbmagazine.com/wp-content/uploads/2021/06/Data_301985997-775x500.gif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Visualización de Datos</h5>
+              <p class="card-text">Aprende a transformar datos en visualizaciones impactantes y fáciles de entender. Exploraremos diferentes tipos de gráficos y herramientas como Matplotlib, Seaborn y Tableau.</p>
+              <a href="#" class="btn btn-primary">Ver Curso</a>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Testimonios</h2>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <p>"Siempre quise entender cómo funcionan los algoritmos de recomendación de Netflix. Ahora puedo crear mis propios modelos de Machine Learning. ¡Los profesores son muy claros y los proyectos prácticos me ayudaron a consolidar mis conocimientos!"</p>
+                <p>- Ana Cedro</p>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <p>"Me ha sorprendido por la calidad de sus cursos avanzados de Deep Learning. Los últimos avances en el campo están siempre presentes y los proyectos desafiantes me ayudan a mantenerme actualizado."</p>
+                <p>- María waller</p>
+              </div>
+              <div class="carousel-item">
+                <p>"Lo mejor de la plataforma es la comunidad. Siempre encuentro a alguien dispuesto a ayudar con mis dudas y los foros son una fuente inagotable de conocimiento."</p>
+                <p>- Pedro López</p>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    <section class="Contacto">
+        <h2>Formulario de susbscripción</h2>
+        <div class="row">
+        <div class="col-lg-6">   
+        <form>
+            
+              <label for="exampleInputEmail1" class="form-label">Correo</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">No se compratirá tu email con nadie</div>
+        
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary">Subscribirse</button>
+          </form>
+        </div>
+        <div class="col-lg-6">
+            <h5>Contáctanos!</h5>
+            <p>Av. Inteligencia Artificial 512, Ciudad de los Datos</p>
+            <p>+52 55 5555 5555</p>
+            <p>AILearning@gamil.com</p>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 plataforma dedicada a ofrecer cursos y recursos en temas de Inteligencia Artificial y Ciencia de Datos</p>
+        <p>
+            <a href="#">Política de privacidad</a>
+            " | "
+            <a href="#">Términos de servicio</a>
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

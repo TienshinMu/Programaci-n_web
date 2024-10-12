@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mi Portafolio</title>
+    </head>
+    <body>
+        <h1>Mi Portafolio</h1>
+        <p>A través de mis ilustraciones y pósters, invito a sumergirte en un universo de fantasía y emociones. Cada diseño es una pequeña obra de arte que puedes llevar contigo.</p>
+        <p>Pide ya!☻</p>
+
+    <section>
+        <h2>Proyectos Destacados</h2>
+
+        <article>
+            <figure>
+                <img src="https://i.pinimg.com/564x/c0/4c/aa/c04caabab70a874b0400e6e79543bd9e.jpg" alt="Proyecto 1:Calma">
+                <figcaption>Figura 1:Calma</figcaption>
+            </figure>
+        </article>
+
+        <article>
+            <figure>
+                <img src="https://i.pinimg.com/736x/e3/f2/27/e3f22771c52b448212b029f012dac515.jpg" alt="Proyecto 2:Nostalgia">
+                <figcaption>Figura 2:Nostalgia</figcaption>
+            </figure>
+        </article>
+
+        <article>
+            <figure>
+                <img src="https://i.pinimg.com/736x/6c/10/05/6c10057c665df96576122553ffa114ed.jpg" alt="Proyecto 3:Bosque">
+                <figcaption>Figura 3:Bosque</figcaption>
+            </figure>
+        </article>
+
+        <article>
+            <figure>
+                <img src="https://i.pinimg.com/736x/56/87/7b/56877b6ab069c5d2096a8958bd681a31.jpg" alt="Proyecto 4:Rojo">
+                <figcaption>Figura 4:Rojo</figcaption>
+            </figure>
+        </article>
+    </section>
+
+    <section>
+        <h2>Habilidades Técnicas</h2>
+        <svg width="200" height="200" xmls="http://www.3w.org/2000/svg">
+            <circle> cx="100" cy="100" r="80" stroke="pink" stroke-width="4" fill="lightpink"</circle>
+            <text x="100" y="105" font-size="20" text-anchor="middle" fill="black">Colorimetría 100%</text>
+        </svg>
+        <svg width="200" height="200" xmls="http://www.3w.org/2000/svg">
+            <circle> cx="100" cy="100" r="80" stroke="yellow" stroke-width="4" fill="lightyellow"</circle>
+            <text x="100" y="105" font-size="20" text-anchor="middle" fill="black">Composición visual 68%</text>
+        </svg> 
+        <svg width="200" height="200" xmls="http://www.3w.org/2000/svg">
+            <circle> cx="100" cy="100" r="80" stroke="blue" stroke-width="4" fill="lightblue"</circle>
+            <text x="100" y="105" font-size="20" text-anchor="middle" fill="black">Perspectiva 72%</text>
+        </svg>  
+    </section>
+
+    <section>
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea><br><br> 
+
+            <button type="boton" onclick="alert('Pedido enviado!')">Enviar</button> <br><br>
+        </form>
+    </section>
+
+    <section>
+        <h2>Gráfico sobre áreas de conocimiento</h2>
+        <canvas id="miCanvas" width="600" height="400"> style="border:1 px solid #000;">
+            Tu navegador no soporta la etiqueta canvas.
+        </canvas>
+        <script>
+            const canvas = document.getElementById('miCanvas');
+            const ctx = canvas.getContext('2d');
+
+            ctx.fillStyle = 'pink';
+            ctx.fillRect(50, 50, 100, 200);
+            ctx.fillStyle = 'black';
+            ctx.fillText("Teoría del arte", 70, 270); 
+
+            ctx.fillStyle = 'red';
+            ctx.fillRect(200, 50, 100, 200);
+            ctx.fillStyle = 'black';
+            ctx.fillText("Historia del arte", 220, 270);
+
+            ctx.fillStyle = 'purple';
+            ctx.fillRect(350, 50, 100, 200);
+            ctx.fillStyle = 'black';
+            ctx.fillText("Narrativa visual", 370, 270);
+        </script>
+    </section>
+
+    <section>
+        <h2>Testimonios</h2>
+        <blockquote>
+            <p>El trabajo de Genesis fue excepcional. Recomiendo sus servicios al 100%.</p>
+            <cite>Carla Hernandez - Cliente Satisfecho</cite>
+        </blockquote>
+
+        <blockquote>
+            <p>Me pareció muy bueno los trabajos, están hermosos!</p>
+            <cite>Julia Mora - Cliente Satisfecho</cite>
+        </blockquote>
+    </section>
+
+    <details>
+        <summary>Más sobre envío</summary>
+        <p>Cada pieza es única y puede ser personalizada a tu gusto. ¡Contáctame para crear una ilustración a medida!</p>
+        <p>Cuéntame tu historia y la transformaré en una obra de arte.</p>
+    </details>
+    <details>
+        <summary>Información adicional</summary>
+        <p>Descubre el artista que llevas dentro. ¡Mis tutoriales te enseñarán todas las técnicas que necesitas para crear obras de arte únicas!</p>
+    </details>
+    </body>
+</html>
